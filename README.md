@@ -45,3 +45,4 @@ WHERE NOT blocked_locks.granted
 df = pd.DataFrame(sql_query)
 df.to_csv (r'C:\temp\Blocking.csv', index = False) 
 
+
