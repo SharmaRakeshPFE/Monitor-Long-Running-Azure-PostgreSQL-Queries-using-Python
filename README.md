@@ -42,7 +42,9 @@ JOIN pg_catalog.pg_stat_activity AS blocking_activity
 WHERE NOT blocked_locks.granted
 '''
                               ,conn)
+			      
 df = pd.DataFrame(sql_query)
+
 df.to_csv (r'C:\temp\Blocking.csv', index = False) 
 
 
